@@ -1,0 +1,27 @@
+html, #root{
+    height: 100%;}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #EAEAEA;
+    min-height: 100%;
+}
+.Catalog{
+    position: relative;
+    min-height: 100%;
+}
+.Basket{
+    max-width: 1127px;
+    margin: 0 auto;
+    height: 100%;
+}
+.basket{
+    height: 100%;
+    min-height: 80vh;
+}
+a{
+    text-decoration: none;
+    color: #000;
+  }
+.button{
+    cursor: pointer;
+}

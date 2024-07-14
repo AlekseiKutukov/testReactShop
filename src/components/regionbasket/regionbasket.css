@@ -1,0 +1,125 @@
+.basket__result__price{
+    width: 306px;
+    height: 98px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    background-color: #fff;
+    padding: 22px 22px 0 22px;
+    position: relative;
+    min-height: 100%;
+    margin-right: 0;
+    align-self: flex-start;
+    margin-left: auto;
+}
+.basket__result_price__text{
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+}
+.basket__result__price__price{
+    float: right;
+}
+.basket__result__price__pay{
+   /* clear: both;*/
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.basket__result__price__price:before {
+    content: " \20BD";
+    padding-right: 5px;
+}
+.basket__result__price__price{
+  font-size: 15px;
+  font-weight: 600;
+}
+.basket__title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C1C27;
+    padding: 29px 0 13px 0;
+}
+.basket__product{
+    width: 633px;
+    height: 218px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+}
+.basket__product__price:after, .basket__product__text:after {
+    content: " \20BD";
+    padding-right: 5px;
+}
+.basket__product__img{
+    width: 146.53px;
+    height: 136px;
+}
+.basket__product__count{
+  width: 118px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.basket__product__img__and__count{
+    width: 146px;
+    height: 100%;
+    padding: 23px 0 0 23px;
+}
+.basket__product__count__result{
+    font-size: 17px;
+    font-weight: 600;
+}
+.basket__product__name__price{
+    width:100%;
+    position: relative;
+    min-height: 100%;
+}
+.basket__product__delete{
+    float:right;
+    margin: 23px 23px 0 0;
+}
+.basket__product__name__price__block{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 23px;
+}
+.basket__product__text{
+    position: absolute;
+    bottom: 0;
+    left: 83%;
+    padding: 0 0 21px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.basket__product__name{
+    font-size: 17px;
+    font-weight: 500;
+    color: #1C1C27;
+}
+.basket__product__price{
+    font-size: 15px;
+    font-weight: 600;
+    color: #AAAAAA;
+    padding-top: 12px;
+}
+.basket__block_and_price{
+    display: flex;
+}
+
