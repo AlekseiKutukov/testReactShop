@@ -3,7 +3,7 @@
   height: 60px;
   margin: 0 auto;
 }
-.header__logo{
+.header__logo {
   font-size: 25px;
   font-weight: 700;
   line-height: 30.48px;
@@ -12,53 +12,53 @@
   float: left;
 }
 
-.header__icons{
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    width: 119.4px;
-    float: right;
-  }
+.header__icons {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 119.4px;
+  float: right;
+}
 
-.header__icons__heart{
+.header__icons__heart {
   width: 62px;
   height: 60px;
   position: relative;
+}
+.header__icons__heart img {
+  margin: 20px;
+  gap: 10px;
+  display: flex;
+}
+
+.header__icons__basket {
+  width: 62px;
+  height: 60px;
+  position: relative;
+}
+.header__icons__basket img {
+  margin: 20px;
+  gap: 10px;
+  display: flex;
+}
+
+.header__icons__basket span,
+.header__icons__heart span {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  border-radius: 50%;
+  font-size: 90%;
+  color: #fff;
+  background: #ffa542;
+  font-weight: 500;
+  text-align: center;
+  width: 16px;
+  height: 18px;
+}
+
+@media screen and (max-width: 300px) {
+  .header__icons {
+    float: left;
   }
-.header__icons__heart img{
-    margin: 20px;
-    gap: 10px;
-    display: flex;
-  }
-
-.header__icons__basket{
-    width: 62px;
-    height: 60px;
-    position: relative;
 }
-.header__icons__basket img{
-    margin: 20px;
-    gap: 10px;
-    display: flex;
-}
-
-.header__icons__basket span, .header__icons__heart span{
-    position: absolute;
-    right: 13px;
-    top: 13px;
-    border-radius: 50%;
-    font-size: 90%;
-    color: #FFF;
-    background: #FFA542;
-    font-weight: 500;
-    text-align: center;
-    width: 16px;
-    height: 18px;
-}
-
-
-
-
-
-
-

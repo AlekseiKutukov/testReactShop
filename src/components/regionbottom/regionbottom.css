@@ -1,4 +1,4 @@
-.region__bottom__title{
+.region__bottom__title {
   font-size: 20px;
   font-weight: 600;
   line-height: 24.38px;
@@ -8,26 +8,27 @@
 }
 
 .region__bottom__cards {
-    width: 100%;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-  }
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
 
+.region__bottom {
+  max-width: 1110px;
+  padding-top: 28px;
+  margin: 0 auto;
+  padding-left: 17px;
+}
+
+@media screen and (max-width: 1110px) {
+  .region__bottom__cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .region__bottom {
-    max-width: 1110px;
-    padding-top: 28px;
-    margin: 0 auto;
-    padding-left: 17px;
+    padding-left: 0;
   }
-
-
-
-
-
-
-
-
-
-
-
+}

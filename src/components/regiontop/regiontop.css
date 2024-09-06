@@ -1,11 +1,11 @@
-.region__top{
-    max-width: 1110px;
-    padding-top: 28px;
-    margin: 0 auto;
-    padding-left: 17px;
+.region__top {
+  max-width: 1110px;
+  padding-top: 28px;
+  margin: 0 auto;
+  padding-left: 17px;
 }
 
-.region__top__title{
+.region__top__title {
   font-size: 20px;
   font-weight: 600;
   line-height: 24.38px;
@@ -14,17 +14,21 @@
   padding-bottom: 20px;
 }
 
-.region__top__cards{
-    width: 100%;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+.region__top__cards {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 
+@media screen and (max-width: 1110px) {
+  .region__top__cards {
+    justify-content: center;
+  }
+}
 
-
-
-
-
-
-
+@media screen and (max-width: 400px) {
+  .region__top {
+    padding-left: 0;
+  }
+}
