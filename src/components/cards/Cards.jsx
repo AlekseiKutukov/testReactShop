@@ -38,6 +38,7 @@ const Cards = ({ id, title, img, price, oldprice, rate }) => {
         Купить
       </div>
     );
+
     return (
       <div className="cards">
         <div className="cards__img__block">
@@ -58,6 +59,10 @@ const Cards = ({ id, title, img, price, oldprice, rate }) => {
             <span className="cards__raiting__text">{rate}</span>
           </div>
           {cliclYesAndNoo}
+
+          {/* <button onClick={() => setModal(modal === false ? true : false)}>
+            Change user
+          </button> */}
         </div>
       </div>
     );

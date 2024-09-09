@@ -16,19 +16,19 @@ const Footer = () => {
       <div className="footer__link__lang">
         <div className="footer__link">
           <ul>
-            <Link to="/">
+            <Link to="/favorites">
               <li>Избранное</li>
             </Link>
             <Link to="/basket">
               <li>Корзина</li>
             </Link>
-            <Link to="/">
+            <Link to="/contacts">
               <li>Контакты</li>
             </Link>
           </ul>
         </div>
         <div className="footer__link__next">
-          <Link to="/">
+          <Link to="/servis">
             <li>Условия сервиса</li>
           </Link>
           <span className="lang">
