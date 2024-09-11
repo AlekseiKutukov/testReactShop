@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/testShop/static/css/main.537d7731.css",
-    "main.js": "/testShop/static/js/main.dccac194.js",
-    "static/media/Apple EarPods_.svg": "/testShop/static/media/Apple EarPods_.12a09f8636a787b0a42918e8244708a0.svg",
-    "static/media/BOROFONE BO4.svg": "/testShop/static/media/BOROFONE BO4.5029ca279336806c7212b17a7cdf6aa5.svg",
-    "static/media/GERLAX GH-04.svg": "/testShop/static/media/GERLAX GH-04.2c23a4a061c6c19281d00d61c8821e6e.svg",
-    "static/media/Apple BYZ S852I.svg": "/testShop/static/media/Apple BYZ S852I.d702fbbb7c5c30c5e58b95657e93831d.svg",
-    "static/media/Apple AirPods.svg": "/testShop/static/media/Apple AirPods.7570d5bb37ea9c53fae6d3a63bad169b.svg",
-    "static/media/Apple EarPods.svg": "/testShop/static/media/Apple EarPods.5bdbdf1f914233252a1437fece0e6e7e.svg",
-    "static/media/VK.svg": "/testShop/static/media/VK.200332db80feb34aac09a5f6d7d91e63.svg",
-    "static/media/Whatsapp.svg": "/testShop/static/media/Whatsapp.8dc15f232a985aef74ed03315e7a3148.svg",
-    "static/media/basket.svg": "/testShop/static/media/basket.0755738f949b36eb371956870cd1c963.svg",
-    "static/media/lang.svg": "/testShop/static/media/lang.c009d57963bd860a4c814e2befc3e4d7.svg",
-    "static/media/Telegram.svg": "/testShop/static/media/Telegram.17041232c86fdbc127e2f87541348769.svg",
-    "index.html": "/testShop/index.html",
-    "static/media/delete.svg": "/testShop/static/media/delete.c3b466f51641c238a464efcaaee70ebf.svg",
-    "static/media/heart.svg": "/testShop/static/media/heart.e4867065cdf4a8882b292150c7141fcc.svg",
-    "static/media/star.svg": "/testShop/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
-    "static/media/increment.svg": "/testShop/static/media/increment.1806841228dec27a021b7d74e7d89ada.svg",
-    "static/media/decrement.svg": "/testShop/static/media/decrement.e7fc98fbf22964a70fb437e1f326da40.svg",
-    "main.537d7731.css.map": "/testShop/static/css/main.537d7731.css.map",
-    "main.dccac194.js.map": "/testShop/static/js/main.dccac194.js.map"
+    "main.css": "/testReactShop/static/css/main.537d7731.css",
+    "main.js": "/testReactShop/static/js/main.5ba104fc.js",
+    "static/media/Apple EarPods_.svg": "/testReactShop/static/media/Apple EarPods_.12a09f8636a787b0a42918e8244708a0.svg",
+    "static/media/BOROFONE BO4.svg": "/testReactShop/static/media/BOROFONE BO4.5029ca279336806c7212b17a7cdf6aa5.svg",
+    "static/media/GERLAX GH-04.svg": "/testReactShop/static/media/GERLAX GH-04.2c23a4a061c6c19281d00d61c8821e6e.svg",
+    "static/media/Apple BYZ S852I.svg": "/testReactShop/static/media/Apple BYZ S852I.d702fbbb7c5c30c5e58b95657e93831d.svg",
+    "static/media/Apple AirPods.svg": "/testReactShop/static/media/Apple AirPods.7570d5bb37ea9c53fae6d3a63bad169b.svg",
+    "static/media/Apple EarPods.svg": "/testReactShop/static/media/Apple EarPods.5bdbdf1f914233252a1437fece0e6e7e.svg",
+    "static/media/VK.svg": "/testReactShop/static/media/VK.200332db80feb34aac09a5f6d7d91e63.svg",
+    "static/media/Whatsapp.svg": "/testReactShop/static/media/Whatsapp.8dc15f232a985aef74ed03315e7a3148.svg",
+    "static/media/basket.svg": "/testReactShop/static/media/basket.0755738f949b36eb371956870cd1c963.svg",
+    "static/media/lang.svg": "/testReactShop/static/media/lang.c009d57963bd860a4c814e2befc3e4d7.svg",
+    "static/media/Telegram.svg": "/testReactShop/static/media/Telegram.17041232c86fdbc127e2f87541348769.svg",
+    "index.html": "/testReactShop/index.html",
+    "static/media/delete.svg": "/testReactShop/static/media/delete.c3b466f51641c238a464efcaaee70ebf.svg",
+    "static/media/heart.svg": "/testReactShop/static/media/heart.e4867065cdf4a8882b292150c7141fcc.svg",
+    "static/media/star.svg": "/testReactShop/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
+    "static/media/increment.svg": "/testReactShop/static/media/increment.1806841228dec27a021b7d74e7d89ada.svg",
+    "static/media/decrement.svg": "/testReactShop/static/media/decrement.e7fc98fbf22964a70fb437e1f326da40.svg",
+    "main.537d7731.css.map": "/testReactShop/static/css/main.537d7731.css.map",
+    "main.5ba104fc.js.map": "/testReactShop/static/js/main.5ba104fc.js.map"
   },
   "entrypoints": [
     "static/css/main.537d7731.css",
-    "static/js/main.dccac194.js"
+    "static/js/main.5ba104fc.js"
   ]
 }
