@@ -21,6 +21,7 @@ const RegionTop = () => {
             oldprice={product.oldPrice}
             rate={product.rate}
             count={product.count}
+            description={product.description}
           />
         ))}
       </div>

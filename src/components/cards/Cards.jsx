@@ -1,10 +1,20 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import BasketContext from '../../context/BasketContext';
 import './cards.css';
 import star from './../../img/icons/star.svg';
 
-const Cards = ({ id, title, img, price, oldprice, rate }) => {
-  const [basketContext, setBasketContext] = useContext(BasketContext);
+const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
+  const [, setBasketContext] = useContext(BasketContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    //Убираем возможность скрола при открытом модальном окне
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isModalOpen]);
 
   const handleClick = () => {
     let cartIds = JSON.parse(sessionStorage.getItem('cartIds')) || [];
@@ -23,6 +33,14 @@ const Cards = ({ id, title, img, price, oldprice, rate }) => {
       return <span className="cards__price__discont">{newOldPrice}</span>;
     }
     return null;
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   try {
@@ -59,11 +77,56 @@ const Cards = ({ id, title, img, price, oldprice, rate }) => {
             <span className="cards__raiting__text">{rate}</span>
           </div>
           {cliclYesAndNoo}
-
-          {/* <button onClick={() => setModal(modal === false ? true : false)}>
-            Change user
-          </button> */}
+          <div className="cards__info button" onClick={openModal}>
+            Подробнее
+          </div>
         </div>
+
+        {/* Модальное окно */}
+        {isModalOpen && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeModal}>
+                &times;
+              </span>
+              <h2>{title}</h2>
+              <div className="img_info">
+                <div className="img">
+                  <img
+                    src={img}
+                    alt={title}
+                    style={{ maxWidth: '200px', maxHeight: '200px' }}
+                  />
+                </div>
+                <div className="info__product">
+                  <div class="detail-row">
+                    <div className="price">Цена:</div>
+                    <div className="value">{price + ' \u20BD'}</div>
+                  </div>
+                  {oldprice ? (
+                    <>
+                      <div class="detail-row">
+                        <div className="old__price">Старая цена:</div>
+                        <div className="old__value">{oldprice + ' \u20BD'}</div>
+                      </div>
+                    </>
+                  ) : (
+                    ''
+                  )}
+                  <div class="detail-row">
+                    <div className="rait">Рейтинг:</div>
+                    <div className="rait__value">{rate}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="product__description"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
+            </div>
+          </div>
+        )}
       </div>
     );
   } catch (error) {
