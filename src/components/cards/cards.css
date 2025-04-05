@@ -1,7 +1,7 @@
 .cards {
   background-color: #fff;
   width: 350px;
-  height: 407px;
+  height: 430px;
   border-radius: 30px;
   box-shadow: 0px 0px 20px 0px #0000001a;
   position: relative;
@@ -20,12 +20,14 @@
   display: grid;
   grid-template-areas:
     'top-left top-right'
-    'bottom-left bottom-right' 'footer footer';
+    'bottom-left bottom-right'
+    'footer footer'
+    'footer-p footer-p';
   width: 310px;
-  height: 90px;
+  /* height: 125px; */
   margin: 0 auto;
   position: absolute;
-  bottom: 26px;
+  bottom: 15px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -80,14 +82,13 @@
 .cards__img__block {
   display: flex;
   align-items: center;
-  height: 75%;
+  height: 60%;
 }
 
 .cards__info {
   grid-area: footer;
   text-align: center;
   box-shadow: 0 0 5px #868686;
-
   padding: 5px 20px;
   border-radius: 5px;
   margin: 0 auto;
@@ -96,6 +97,21 @@
 
 .cards__info:hover {
   box-shadow: 0 0 5px #1f1f1f;
+  transition: all 0.5s;
+}
+
+.cards__info__portal {
+  grid-area: footer-p;
+  text-align: center;
+  box-shadow: 0 0 5px #868686;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.cards__info__portal:hover {
+  box-shadow: 0 0 5px #f00;
   transition: all 0.5s;
 }
 

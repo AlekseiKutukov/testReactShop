@@ -1,20 +1,22 @@
 import { useContext, useState, useEffect } from 'react';
 import BasketContext from '../../context/BasketContext';
+import Modal from '../modal/Modal';
 import './cards.css';
 import star from './../../img/icons/star.svg';
 
 const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
   const [, setBasketContext] = useContext(BasketContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpenPortal, setIsModalOpenPortal] = useState(false);
 
   useEffect(() => {
     //Убираем возможность скрола при открытом модальном окне
-    if (isModalOpen) {
+    if (isModalOpen || isModalOpenPortal) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
-  }, [isModalOpen]);
+  }, [isModalOpen, isModalOpenPortal]);
 
   const handleClick = () => {
     let cartIds = JSON.parse(sessionStorage.getItem('cartIds')) || [];
@@ -41,6 +43,14 @@ const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const openModalPortal = () => {
+    setIsModalOpenPortal(true);
+  };
+
+  const closeModalPortal = () => {
+    setIsModalOpenPortal(false);
   };
 
   try {
@@ -80,7 +90,23 @@ const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
           <div className="cards__info button" onClick={openModal}>
             Подробнее
           </div>
+
+          <div className="cards__info__portal button" onClick={openModalPortal}>
+            Подробнее (Портал)
+          </div>
         </div>
+
+        {/* Модальное окно через ReactDOM.createPortal*/}
+        <Modal
+          isOpen={isModalOpenPortal}
+          onClose={closeModalPortal}
+          title={title}
+          img={img}
+          price={price}
+          oldprice={oldprice}
+          rate={rate}
+          description={description}
+        />
 
         {/* Модальное окно */}
         {isModalOpen && (
@@ -99,13 +125,13 @@ const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
                   />
                 </div>
                 <div className="info__product">
-                  <div class="detail-row">
+                  <div className="detail-row">
                     <div className="price">Цена:</div>
                     <div className="value">{price + ' \u20BD'}</div>
                   </div>
                   {oldprice ? (
                     <>
-                      <div class="detail-row">
+                      <div className="detail-row">
                         <div className="old__price">Старая цена:</div>
                         <div className="old__value">{oldprice + ' \u20BD'}</div>
                       </div>
@@ -113,7 +139,7 @@ const Cards = ({ id, title, img, price, oldprice, rate, description }) => {
                   ) : (
                     ''
                   )}
-                  <div class="detail-row">
+                  <div className="detail-row">
                     <div className="rait">Рейтинг:</div>
                     <div className="rait__value">{rate}</div>
                   </div>
