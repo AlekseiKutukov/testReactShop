@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testReactShop/static/css/main.41426324.css",
+    "main.css": "/testReactShop/static/css/main.d8b41908.css",
     "main.js": "/testReactShop/static/js/main.e3becdef.js",
     "static/media/Apple EarPods_.svg": "/testReactShop/static/media/Apple EarPods_.12a09f8636a787b0a42918e8244708a0.svg",
     "static/media/BOROFONE BO4.svg": "/testReactShop/static/media/BOROFONE BO4.5029ca279336806c7212b17a7cdf6aa5.svg",
@@ -19,11 +19,11 @@
     "static/media/star.svg": "/testReactShop/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
     "static/media/increment.svg": "/testReactShop/static/media/increment.1806841228dec27a021b7d74e7d89ada.svg",
     "static/media/decrement.svg": "/testReactShop/static/media/decrement.e7fc98fbf22964a70fb437e1f326da40.svg",
-    "main.41426324.css.map": "/testReactShop/static/css/main.41426324.css.map",
+    "main.d8b41908.css.map": "/testReactShop/static/css/main.d8b41908.css.map",
     "main.e3becdef.js.map": "/testReactShop/static/js/main.e3becdef.js.map"
   },
   "entrypoints": [
-    "static/css/main.41426324.css",
+    "static/css/main.d8b41908.css",
     "static/js/main.e3becdef.js"
   ]
 }
