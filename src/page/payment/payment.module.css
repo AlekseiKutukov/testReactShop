@@ -1,0 +1,82 @@
+.payment {
+  max-width: 1127px;
+  margin: 0 auto;
+}
+
+title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex: 2;
+  min-width: 300px;
+}
+
+.subtitle {
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.radioLabel {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #ffa542;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e68f2d;
+}
+
+.summary {
+  flex: 1;
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.item,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.payment {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}

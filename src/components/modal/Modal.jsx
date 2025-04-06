@@ -11,6 +11,7 @@ const Modal = ({
   oldprice,
   rate,
   description,
+  children,
 }) => {
   if (!isOpen) return null;
 
@@ -20,31 +21,36 @@ const Modal = ({
         <span className={styles.close} onClick={onClose}>
           ×
         </span>
+
+        {children ? <>{children}</> : ''}
+
         <h2>{title}</h2>
         <img
           src={img}
           alt={title}
           style={{ maxWidth: '200px', maxHeight: '200px' }}
         />
-
-        <div className={styles.label_value}>
-          <div className={styles.label}>Цена:</div>
-          <div className={styles.value}>{price + ' \u20BD'}</div>
-        </div>
-
-        {oldprice && (
-          <>
-            <div className={styles.label_value}>
-              <div className={styles.label}>Старая цена:</div>
-              <div className={styles.value}>{oldprice + ' \u20BD'}</div>
-            </div>
-          </>
+        {price && (
+          <div className={styles.label_value}>
+            <div className={styles.label}>Цена:</div>
+            <div className={styles.value}>{price + ' \u20BD'}</div>
+          </div>
         )}
 
-        <div className={styles.label_value}>
-          <div className={styles.label}>Рейтинг:</div>
-          <div className={styles.value}>{rate}</div>
-        </div>
+        {oldprice && (
+          <div className={styles.label_value}>
+            <div className={styles.label}>Старая цена:</div>
+            <div className={styles.value}>{oldprice + ' \u20BD'}</div>
+          </div>
+        )}
+
+        {rate && (
+          <div className={styles.label_value}>
+            <div className={styles.label}>Рейтинг:</div>
+            <div className={styles.value}>{rate}</div>
+          </div>
+        )}
+
         <div
           className={styles.description}
           dangerouslySetInnerHTML={{ __html: description }}

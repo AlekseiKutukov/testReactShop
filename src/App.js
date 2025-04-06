@@ -9,6 +9,7 @@ import Contacts from './page/Contacts';
 import Servis from './page/Servis';
 import Solucionis from './page/Solucionis';
 import Favorites from './page/Favorites';
+import Payment from './page/payment/Payment';
 
 function App() {
   const [basketContext, setBasketContext] = useState(
@@ -21,14 +22,13 @@ function App() {
     <BasketContext.Provider value={[basketContext, setBasketContext]}>
       <BrowserRouter>
         <Header />
-
-        {/* {modalContext && <Modal />} */}
         <Routes>
           <Route index={true} element={<Catalog />} />
           <Route path="/" element={<Catalog />} />
           <Route path="basket" element={<Basket />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="servis" element={<Servis />} />
+          <Route path="payment" element={<Payment />} />
           <Route path="solucionis" element={<Solucionis />}></Route>
           <Route path="favorites" element={<Favorites />}></Route>
         </Routes>

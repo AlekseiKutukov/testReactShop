@@ -1,11 +1,28 @@
 import { useEffect, useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import RegionBasketCards from './RegionBasketCards';
 import headphones from '../../product';
 import BasketContext from '../../context/BasketContext';
+import Modal from './../modal/Modal';
 import './regionbasket.css';
 
 const Regionbasket = () => {
-  const [basketContext, setBasketContext] = useContext(BasketContext);
+  const [basketCount, setBasketContext] = useContext(BasketContext);
+  const [isEmptyCartModalOpen, setIsEmptyCartModalOpen] = useState(false); // Состояние для модального окна
+
+  const handleCheckoutClick = (e) => {
+    if (basketCount === 0) {
+      e.preventDefault(); // Предотвращаем переход по ссылке
+      setIsEmptyCartModalOpen(true);
+    } else {
+      sessionStorage.setItem('totalPrice', total.price); // Сохраняем цену
+    }
+  };
+
+  const closeEmptyCartModal = () => {
+    setIsEmptyCartModalOpen(false); // Закрываем модальное окно
+  };
+
   let headphonesId = JSON.parse(sessionStorage.getItem('cartIds')) || [];
 
   const productBasket = headphones.filter((item) =>
@@ -92,13 +109,24 @@ const Regionbasket = () => {
   return (
     <div className="basket">
       <div className="basket__title">Корзина</div>
-
       <div className="basket__block_and_price">
         <div className="basket__block">{products}</div>
         <div className="basket__result__price">
           <div className="basket__result_price__text">ИТОГО</div>
           <div className="basket__result__price__price">{total.price}</div>
-          <div className="basket__result__price__pay">Перейти к оформлению</div>
+          <Link to="/payment" onClick={handleCheckoutClick}>
+            <div className="basket__result__price__pay">
+              Перейти к оформлению
+            </div>
+          </Link>
+
+          {/* Модальное окно для пустой корзины */}
+          <Modal isOpen={isEmptyCartModalOpen} onClose={closeEmptyCartModal}>
+            <p>Добавьте товары в корзину, чтобы продолжить оформление.</p>
+            <button className="modal-ok-button" onClick={closeEmptyCartModal}>
+              ОК
+            </button>
+          </Modal>
         </div>
       </div>
     </div>
