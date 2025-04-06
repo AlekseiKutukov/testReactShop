@@ -13,13 +13,15 @@
 3. Запустить
    npm start
 
-4. Перейти по адресу http://localhost:3000/testShop
+4. Перейти по адресу http://localhost:3000/testReactShop
 
 ЕСЛИ ПРОЕКТ НЕ ЗАПУСТИЛСЯ:
 
 1. rm -rf node_modules
 2. rm package-lock.json
 3. npm install
+
+После этого из консоли можно выполнять `npm run deploy` (или yarn deploy) и проект будет собираться и выкатываться на gh-pages.
 
 ##
 
