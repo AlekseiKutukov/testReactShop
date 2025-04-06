@@ -15,6 +15,12 @@
 
 4. Перейти по адресу http://localhost:3000/testShop
 
+ЕСЛИ ПРОЕКТ НЕ ЗАПУСТИЛСЯ:
+
+1. rm -rf node_modules
+2. rm package-lock.json
+3. npm install
+
 ##
 
 ###
