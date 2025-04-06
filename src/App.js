@@ -20,7 +20,7 @@ function App() {
 
   return (
     <BasketContext.Provider value={[basketContext, setBasketContext]}>
-      <BrowserRouter>
+      <BrowserRouter basename="/testShop">
         <Header />
         <Routes>
           <Route index={true} element={<Catalog />} />
