@@ -21,8 +21,6 @@
 2. rm package-lock.json
 3. npm install
 
-После этого из консоли можно выполнять `npm run deploy` (или yarn deploy) и проект будет собираться и выкатываться на gh-pages.
-
 ##
 
 ###
@@ -54,9 +52,21 @@
 
 ###
 
-### `npm start`
+###
 
-// "homepage": "https://AlekseiKutukov.github.io/testShop",
+npm start
+
+npm run deploy - проект будет собираться и выкатываться на gh-pages.
+
+https://alekseikutukov.github.io/testReactShop
+
+-
+-
+-
+-
+-
+-
+-
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
